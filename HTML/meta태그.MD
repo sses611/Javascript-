@@ -71,8 +71,48 @@ Content-Script-Type : 웹페이지에 쓰인 언어 지정
 <meta http-equiv="Build" content="date" /> : 제적년월
 <meta http-equiv="Last-Modified" content="" /> 수정년월
 ```
+
 ```
 <meta http-equiv="imagetoolbar" content="no" /> : 그림 위 마우스오버시 이마지 툴바 생기지 않게 하기
-<meta http-equiv="Cache-Control" content="no-cache" /> : zp
+```
+```
+<meta http-equiv="Cache-Control" content="no-cache" /> : 페이지를 캐시에서 가져오지 않게 하여 항상 서버에 접속해서 페이지를 가져옴
 <meta http-equiv="Pragma" content="no-chche" />
+```
 
+```
+<meta http-equiv="Expires" content="Mon,  08 Sep 2016 10:10:10 GMT" /> : 캐쉬 만료일 지정
+```
+
+```
+<meta http-equiv="refresh" content="60" /> : 60초마다 새로고침하도록 지정
+<meta http-equiv="refresh" content="5; url = 주소" /> 입력한 주소로 5초후 이동
+```
+
+```
+<meta http-equiv="refresh" content="revealtrans(Duration=1, Transition=12)" />
+```
+
+1. Box out : 네모난 박스가 안쪽에서 바깥쪽으로
+2. Circle in : 원이 바깥에서 안쪽으로
+3. Circle out : 원이 안쪽에서 바깥쪽으로
+4. Wipe up : 이미지의 아래에서 위쪽으로 수직 이동
+5. Wipe down : 이미지의 위에서 아래쪽으로 수직 이동
+6. Wipe right : 이미지의 왼쪽에서 오른쪽으로 수평 이동
+7. Wipe left : 이미지의 오른쪽에서 왼쪽으로 수평 이동
+8. Vertical blinds : 수직 블라인드가 쳐지는 형태로 변환
+9. Horizontal blinds : 수평 블라인드가 쳐지는 형태로 변환
+10. Checkerboard across : 바둑판 형태의 격자가 왼쪽에서 오른쪽으로 생성
+11. Checkerboard down : 바둑판 형태의 격자가 위에서 아래로 생성
+12. Random dissove : 안개와 비슷한 형태로 전환
+13. Split vertical in : 왼쪽과 오른쪽 끝에서 중앙으로 수직 이동
+14. Split vertical out : 중앙에서 양쪽 끝으로 수직 이동
+15. Split Horizontal in : 양쪽에서 중앙으로 수평 이동
+16. Split Horizontal out : 중앙에서 양쪽 끝으로 수직이동
+17. Strips left down : 대각선 형태로 오른쪽 상단에서 왼쪽 하단으로 이동
+18. Strips left up : 대각선 형태로 오른쪽 하단에서 왼쪽 상단으로 이동
+19. Strips right down : 대각선 형태로 왼쪽 상단에서 오른쪽 하단으로 이동
+20. Strips right up : 대각선 형태로 왼쪽 하단에서 오른쪽 상단으로 이동
+21. Random bars horizontal : 수평선이 무작위로 생성
+22. Random bars vertical : 수직선이 무작위로 생성
+23. Random : 임의로 생성 
