@@ -1,0 +1,42 @@
+## String 
+
+#### length
+#### constructor
+#### prototype
+
+#### charAt
+#### concat
+#### fromCharCode
+#### indexOf
+#### lastIndexOf
+#### replace
+#### search
+#### slice
+#### split
+#### substr
+#### toLocalLowerCase
+#### toLocalUpperCase
+#### toLowerCase
+#### toString
+#### toUpperCase
+#### valueOf
+
+## Number
+#### constructor
+#### MAX_VALUE
+#### NaN
+#### NEGATIVE_INFINITY
+#### POSITIVE_INFIITY
+#### prototye
+
+#### toString
+#### toFixed
+#### toExponential
+#### toPrecision
+#### ValueOf
+
+## Function
+#### length
+#### prototype
+#### apply
+#### call
