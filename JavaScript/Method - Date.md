@@ -17,23 +17,3 @@
 #### toLocalString
 #### toSouce
 #### toString
-
-
-## Math
-
-#### abs
-#### acos
-#### asin
-#### atan
-#### ceil
-#### exp
-#### floor
-#### log
-#### max
-#### min
-#### pow
-#### random
-#### round
-#### sin
-#### sqrt
-#### tan
