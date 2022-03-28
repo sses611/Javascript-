@@ -32,7 +32,8 @@ weekly.push(weekly);
  weekly.unshift("목, 금");
 ▶ document.write(weekly);
 ▶ 목, 금, 월, 화, 수 
- 
+```
+
 #### slice : 배열값의 일부분을 선택하여 새로운 배열을 만듬
 #### splice : 이전 배열요소를 삭제하고 새로운 내용물을 추가하는 형태로 배열 내용을 변경하고, 삭제된 요소들을 반환
 ```
@@ -42,6 +43,7 @@ weekly.push(weekly);
  
  weekly.splice(0,3,"일요일", "월요일", "화요일", "수요일");
 ```
+
 #### reverse : 배열의 요소를 역순으로 변환.
 #### sort : 숫자 또는 문자열 순서대로 정렬
 #### toLocaleString : 배열의 요소를 format 형태의 문자열로 나타낸다.
