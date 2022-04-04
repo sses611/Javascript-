@@ -1,40 +1,5 @@
 # window 객체 
 웹 브라우저가 제공하는 객체 중에 최상위 객체 = 생락, self, this
-
-## 메소드
-alert()
-clearTime()
-confirm()
-prompt()
-open()
-setTimeOut()
-eval()
-toString()
-blur()
-focus()
-scroll()
-valueOf()
-back()
-find()
-forward()
-home()
-moveby()
-moveto()
-resizeby()
-resizeto()
-scrollby()
-scrollto()
-stop()
-captureEvents()
-setInterval()
-clearInterval()
-handleEvent()
-print()
-releaseEvent()
-routeEvent()
-toSource()
-
-
 ## 속성
 | | |
 |--|--|
@@ -67,6 +32,4 @@ toSource()
 locationbar| menubar|personalbar|scollbar|statusbar|toolbar
 |--|--|--|--|--|--| 
 |location 바|창 메뉴 바|창의 퍼스널 바|스크롤바|상태 바|도구 바
-
-
 
