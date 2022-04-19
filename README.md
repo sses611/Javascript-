@@ -1,2 +1,3 @@
 # WEB
-HTML, CSS, javascript, JSP
+
+## 자바스크립트와 jQuery
