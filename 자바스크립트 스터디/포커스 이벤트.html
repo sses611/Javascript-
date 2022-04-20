@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/default.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jOuery CDN 연결-->
+  <script>
+      $(document).ready(function(){
+        $('.text1').on('focus',function(){
+          $(".text1").css({
+            'background' : '#f00',
+            'border' : '1px solid red'
+          });
+        });
+
+        $('.text2').on('blur', function(){
+          $('.text2').css({
+            'background' : '#f00',
+            'border' : '1px solid red'
+          });
+        });
+
+      $('.text3').on('focusin', function(){
+          $('.text3').css({
+            'background' : 'yellow'     
+          });
+        });
+
+      $('.text4').on('focusout', function(){
+          $('.text4').css({
+            'background' : 'yellow'
+          });
+        });
+  
+
+      $('.text5').on('change', function(){
+         
+          if($(this).val() == "사과"){
+            $('.result').text("사과입니다.");
+          } else if($(this).val() == "포도"){
+            $('.result').text("저는 "+$(this).val()+"입니다.");
+          } else if($(this).val() == "바나나"){
+            $('.result').text("저는 "+$(this).val()+"입니다.");
+          } else if($(this).val() == "블루베리"){
+            $('.result').text("저는 "+$(this).val()+"입니다.");
+          }
+        });
+      });
+
+  </script>
+  
+</head>
+<body>
+  <div>
+    <input type="text" class="text1"/>focus<br/>
+    <input type="text" class="text2"/>blur<br/>
+    <input type="text" class="text3"/>focusin<br/>
+    <input type="text" class="text4"/>focusout<br/>
+    
+    <select class="text5">
+      <option value="사과">apple</option>
+      <option value="포도">grape</option>
+      <option value="바나나">banana</option>
+      <option value="블루베리">blueberry</option>
+  </select>
+      <br/>
+      <span class="result">-</span>
+  </div>
+</body>
+</html>
