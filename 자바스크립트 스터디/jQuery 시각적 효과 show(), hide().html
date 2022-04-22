@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/default.css"/>
+  <script src ='js/basic.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jOuery CDN 연결-->
+  <script> //show(), hide()
+    function showImage(){
+      $('#target1').show(2000, stmt1);
+      $('#target2').show(3000, stmt1);
+      }
+      function hideImage(){
+        $('#target1').hide(2000, stmt2);
+        $('#target2').hide(3000, stmt2);
+      }
+
+      function stmt1(){
+        $('#p1').text("이미지가 보인다.");
+      }
+      
+      function stmt2(){
+        $('#p1').text("이미지가 사라진다.");
+      }
+  </script>
+
+</head>
+<body> <!--show(), hide()-->
+   <img id ='target1' style="width: 100px; height: 100px;" src="resource/imgs/strawberries.jpg"/>
+  <img id ='target2' style="width: 100px; height: 100px;" src="resource/imgs/hatching.png"/> <br/>
+
+  <form>
+    <input type="button" value="보이기"  onclick="showImage()" />
+    <input type="button" value="감추기"  onclick="hideImage()" />
+  </form>
+  <p id="p1"></p>
+</body>
+</html>
