@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/default.css"/>
+  <script src ='js/basic.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jOuery CDN 연결-->
+
+
+  <script> //toggle로 메시지 나타내기
+     function animator(){
+      $("#target").animate({
+        width: "80%",
+        opacity : 0.333,
+        fontSize : "26pt",
+        marginLeft :  "0.5in",
+        borderWidth : "15px"
+      }, 2000);
+      alert("실행완료");
+    }
+  </script>
+
+  <style>
+    div{
+      background: cyan;
+      width: 100px;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body><!--toggle로 메시지 나타내기-->
+  <div id="target">이 문장이 확대되는 애니메이션입니다.</div><br>
+  <form>
+    <button onclick="animator();">Animate</button>
+  </form>
+</body>
+</html>

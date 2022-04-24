@@ -17,6 +17,13 @@
     function fadeout(){
       $('#target').fadeOut(2000);
     }
+
+    function fade(){
+      $('#target').fadeTo(2000, 0.333, stmt1);
+    }
+    function stmt1(){
+      $('#p1').text("이미지가 부분적으로 흐려졌습니다.")
+    }
   </script>
 
   
@@ -25,8 +32,9 @@
 <body>
   <img id="target" src="resource/imgs/hatching.png"/><br/>
   <form>
-    <input type="button" value="fadein" onclick="fadein();"/>
-    <input type="button" value="fadeout" onclick="fadeout();"/>
+    <!-- <input type="button" value="fadein" onclick="fadein();"/>
+    <input type="button" value="fadeout" onclick="fadeout();"/> -->
+    <input type="button" value="fade" onclick="fade();"/>  
   </form>
 </body>
 </html>
